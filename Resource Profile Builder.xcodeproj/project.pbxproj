@@ -9,23 +9,61 @@
 /* Begin PBXBuildFile section */
 		09859EE02AEE4C3C00A71825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09859EDF2AEE4C3C00A71825 /* AppDelegate.swift */; };
 		09859EE22AEE4C3C00A71825 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09859EE12AEE4C3C00A71825 /* SceneDelegate.swift */; };
-		09859EE42AEE4C3C00A71825 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09859EE32AEE4C3C00A71825 /* ViewController.swift */; };
+		09859EE42AEE4C3C00A71825 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09859EE32AEE4C3C00A71825 /* LoginViewController.swift */; };
 		09859EE72AEE4C3C00A71825 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09859EE52AEE4C3C00A71825 /* Main.storyboard */; };
 		09859EEA2AEE4C3C00A71825 /* Resource_Profile_Builder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09859EE82AEE4C3C00A71825 /* Resource_Profile_Builder.xcdatamodeld */; };
 		09859EEC2AEE4C3D00A71825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09859EEB2AEE4C3D00A71825 /* Assets.xcassets */; };
 		09859EEF2AEE4C3D00A71825 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09859EED2AEE4C3D00A71825 /* LaunchScreen.storyboard */; };
+		09BBCF822AEE4F6C00B8E0C2 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09BBCF7D2AEE4F6C00B8E0C2 /* Gilroy-Medium.ttf */; };
+		09BBCF832AEE4F6C00B8E0C2 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09BBCF7E2AEE4F6C00B8E0C2 /* Gilroy-Bold.ttf */; };
+		09BBCF842AEE4F6C00B8E0C2 /* Gilroy-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09BBCF7F2AEE4F6C00B8E0C2 /* Gilroy-Heavy.ttf */; };
+		09BBCF852AEE4F6C00B8E0C2 /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09BBCF802AEE4F6C00B8E0C2 /* Gilroy-SemiBold.ttf */; };
+		09BBCF862AEE4F6C00B8E0C2 /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09BBCF812AEE4F6C00B8E0C2 /* Gilroy-Regular.ttf */; };
+		09BBCF8A2AEE517700B8E0C2 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BBCF892AEE517700B8E0C2 /* UIView+Ext.swift */; };
+		09BBCF8E2AEE652300B8E0C2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BBCF8D2AEE652300B8E0C2 /* Utilities.swift */; };
+		09BBCF902AEE663D00B8E0C2 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BBCF8F2AEE663D00B8E0C2 /* UITextField+Ext.swift */; };
+		09BBCF942AEE6C0B00B8E0C2 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BBCF932AEE6C0B00B8E0C2 /* UIColor+Ext.swift */; };
+		09F75EF02AEEA8CE0026D2A8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F75EEF2AEEA8CE0026D2A8 /* HomeViewController.swift */; };
+		09F75EF22AEEA8F20026D2A8 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F75EF12AEEA8F20026D2A8 /* Routing.swift */; };
+		09F75EF42AEEAA390026D2A8 /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F75EF32AEEAA390026D2A8 /* UIStoryboard+Ext.swift */; };
+		09F75EF72AEEAA6C0026D2A8 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F75EF62AEEAA6C0026D2A8 /* Enums.swift */; };
+		09F75EF92AEEAAF70026D2A8 /* NSObject+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F75EF82AEEAAF70026D2A8 /* NSObject+Ext.swift */; };
+		09F75EFE2AEEAC080026D2A8 /* EmptyTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F75EFC2AEEAC080026D2A8 /* EmptyTVCell.swift */; };
+		09F75EFF2AEEAC080026D2A8 /* EmptyTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F75EFD2AEEAC080026D2A8 /* EmptyTVCell.xib */; };
+		09F75F012AEEDFF20026D2A8 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F75F002AEEDFF20026D2A8 /* UITableView+Ext.swift */; };
+		29C2D52B0C8195AA9C803BD0 /* Pods_Resource_Profile_Builder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18D7193F5CD9E6D781E7788 /* Pods_Resource_Profile_Builder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09859EDC2AEE4C3C00A71825 /* Resource Profile Builder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resource Profile Builder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09859EDF2AEE4C3C00A71825 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09859EE12AEE4C3C00A71825 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		09859EE32AEE4C3C00A71825 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09859EE32AEE4C3C00A71825 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		09859EE62AEE4C3C00A71825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09859EE92AEE4C3C00A71825 /* Resource_Profile_Builder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Resource_Profile_Builder.xcdatamodel; sourceTree = "<group>"; };
 		09859EEB2AEE4C3D00A71825 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09859EEE2AEE4C3D00A71825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09859EF02AEE4C3D00A71825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09BBCF7D2AEE4F6C00B8E0C2 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
+		09BBCF7E2AEE4F6C00B8E0C2 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
+		09BBCF7F2AEE4F6C00B8E0C2 /* Gilroy-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Heavy.ttf"; sourceTree = "<group>"; };
+		09BBCF802AEE4F6C00B8E0C2 /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
+		09BBCF812AEE4F6C00B8E0C2 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
+		09BBCF892AEE517700B8E0C2 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		09BBCF8D2AEE652300B8E0C2 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		09BBCF8F2AEE663D00B8E0C2 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
+		09BBCF932AEE6C0B00B8E0C2 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		09F75EEF2AEEA8CE0026D2A8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		09F75EF12AEEA8F20026D2A8 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		09F75EF32AEEAA390026D2A8 /* UIStoryboard+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Ext.swift"; sourceTree = "<group>"; };
+		09F75EF62AEEAA6C0026D2A8 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		09F75EF82AEEAAF70026D2A8 /* NSObject+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Ext.swift"; sourceTree = "<group>"; };
+		09F75EFC2AEEAC080026D2A8 /* EmptyTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTVCell.swift; sourceTree = "<group>"; };
+		09F75EFD2AEEAC080026D2A8 /* EmptyTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyTVCell.xib; sourceTree = "<group>"; };
+		09F75F002AEEDFF20026D2A8 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		30D7C5BDC1C07E289AF481DA /* Pods-Resource Profile Builder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resource Profile Builder.release.xcconfig"; path = "Target Support Files/Pods-Resource Profile Builder/Pods-Resource Profile Builder.release.xcconfig"; sourceTree = "<group>"; };
+		3949B4A2F2BA8342EC1898AF /* Pods-Resource Profile Builder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resource Profile Builder.debug.xcconfig"; path = "Target Support Files/Pods-Resource Profile Builder/Pods-Resource Profile Builder.debug.xcconfig"; sourceTree = "<group>"; };
+		E18D7193F5CD9E6D781E7788 /* Pods_Resource_Profile_Builder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Resource_Profile_Builder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C2D52B0C8195AA9C803BD0 /* Pods_Resource_Profile_Builder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +83,8 @@
 			children = (
 				09859EDE2AEE4C3C00A71825 /* Resource Profile Builder */,
 				09859EDD2AEE4C3C00A71825 /* Products */,
+				FE60FDA68C69ACBE7DF5F339 /* Pods */,
+				A3CFC7148C355DF26F5F090D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +99,10 @@
 		09859EDE2AEE4C3C00A71825 /* Resource Profile Builder */ = {
 			isa = PBXGroup;
 			children = (
+				09BBCF7B2AEE4F5200B8E0C2 /* Utils */,
+				09BBCF792AEE4EB000B8E0C2 /* Presentation */,
 				09859EDF2AEE4C3C00A71825 /* AppDelegate.swift */,
 				09859EE12AEE4C3C00A71825 /* SceneDelegate.swift */,
-				09859EE32AEE4C3C00A71825 /* ViewController.swift */,
 				09859EE52AEE4C3C00A71825 /* Main.storyboard */,
 				09859EEB2AEE4C3D00A71825 /* Assets.xcassets */,
 				09859EED2AEE4C3D00A71825 /* LaunchScreen.storyboard */,
@@ -70,6 +112,111 @@
 			path = "Resource Profile Builder";
 			sourceTree = "<group>";
 		};
+		09BBCF792AEE4EB000B8E0C2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				09F75EFA2AEEABD70026D2A8 /* TableView Cell */,
+				09F75EF52AEEAA610026D2A8 /* Enums */,
+				09BBCF8B2AEE650E00B8E0C2 /* Helper Classes */,
+				09BBCF882AEE513B00B8E0C2 /* Extensions */,
+				09BBCF7A2AEE4EB600B8E0C2 /* ViewControllers */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		09BBCF7A2AEE4EB600B8E0C2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				09859EE32AEE4C3C00A71825 /* LoginViewController.swift */,
+				09F75EEF2AEEA8CE0026D2A8 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		09BBCF7B2AEE4F5200B8E0C2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				09BBCF7C2AEE4F5700B8E0C2 /* Fonts */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		09BBCF7C2AEE4F5700B8E0C2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				09BBCF7E2AEE4F6C00B8E0C2 /* Gilroy-Bold.ttf */,
+				09BBCF7F2AEE4F6C00B8E0C2 /* Gilroy-Heavy.ttf */,
+				09BBCF7D2AEE4F6C00B8E0C2 /* Gilroy-Medium.ttf */,
+				09BBCF812AEE4F6C00B8E0C2 /* Gilroy-Regular.ttf */,
+				09BBCF802AEE4F6C00B8E0C2 /* Gilroy-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		09BBCF882AEE513B00B8E0C2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				09BBCF892AEE517700B8E0C2 /* UIView+Ext.swift */,
+				09BBCF8F2AEE663D00B8E0C2 /* UITextField+Ext.swift */,
+				09BBCF932AEE6C0B00B8E0C2 /* UIColor+Ext.swift */,
+				09F75EF32AEEAA390026D2A8 /* UIStoryboard+Ext.swift */,
+				09F75EF82AEEAAF70026D2A8 /* NSObject+Ext.swift */,
+				09F75F002AEEDFF20026D2A8 /* UITableView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		09BBCF8B2AEE650E00B8E0C2 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				09BBCF8D2AEE652300B8E0C2 /* Utilities.swift */,
+				09F75EF12AEEA8F20026D2A8 /* Routing.swift */,
+			);
+			path = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		09F75EF52AEEAA610026D2A8 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				09F75EF62AEEAA6C0026D2A8 /* Enums.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		09F75EFA2AEEABD70026D2A8 /* TableView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09F75EFB2AEEABF10026D2A8 /* EmptyTVCell */,
+			);
+			path = "TableView Cell";
+			sourceTree = "<group>";
+		};
+		09F75EFB2AEEABF10026D2A8 /* EmptyTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				09F75EFC2AEEAC080026D2A8 /* EmptyTVCell.swift */,
+				09F75EFD2AEEAC080026D2A8 /* EmptyTVCell.xib */,
+			);
+			path = EmptyTVCell;
+			sourceTree = "<group>";
+		};
+		A3CFC7148C355DF26F5F090D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E18D7193F5CD9E6D781E7788 /* Pods_Resource_Profile_Builder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE60FDA68C69ACBE7DF5F339 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3949B4A2F2BA8342EC1898AF /* Pods-Resource Profile Builder.debug.xcconfig */,
+				30D7C5BDC1C07E289AF481DA /* Pods-Resource Profile Builder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09859EF32AEE4C3D00A71825 /* Build configuration list for PBXNativeTarget "Resource Profile Builder" */;
 			buildPhases = (
+				67CE75003B39CE299CD501B6 /* [CP] Check Pods Manifest.lock */,
 				09859ED82AEE4C3C00A71825 /* Sources */,
 				09859ED92AEE4C3C00A71825 /* Frameworks */,
 				09859EDA2AEE4C3C00A71825 /* Resources */,
+				E71A65758E5765356074A8BB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,7 +277,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09BBCF842AEE4F6C00B8E0C2 /* Gilroy-Heavy.ttf in Resources */,
 				09859EEF2AEE4C3D00A71825 /* LaunchScreen.storyboard in Resources */,
+				09BBCF822AEE4F6C00B8E0C2 /* Gilroy-Medium.ttf in Resources */,
+				09F75EFF2AEEAC080026D2A8 /* EmptyTVCell.xib in Resources */,
+				09BBCF862AEE4F6C00B8E0C2 /* Gilroy-Regular.ttf in Resources */,
+				09BBCF832AEE4F6C00B8E0C2 /* Gilroy-Bold.ttf in Resources */,
+				09BBCF852AEE4F6C00B8E0C2 /* Gilroy-SemiBold.ttf in Resources */,
 				09859EEC2AEE4C3D00A71825 /* Assets.xcassets in Resources */,
 				09859EE72AEE4C3C00A71825 /* Main.storyboard in Resources */,
 			);
@@ -136,15 +291,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67CE75003B39CE299CD501B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Resource Profile Builder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E71A65758E5765356074A8BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Resource Profile Builder/Pods-Resource Profile Builder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Resource Profile Builder/Pods-Resource Profile Builder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Resource Profile Builder/Pods-Resource Profile Builder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		09859ED82AEE4C3C00A71825 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09859EE42AEE4C3C00A71825 /* ViewController.swift in Sources */,
+				09F75EF22AEEA8F20026D2A8 /* Routing.swift in Sources */,
+				09BBCF8E2AEE652300B8E0C2 /* Utilities.swift in Sources */,
+				09859EE42AEE4C3C00A71825 /* LoginViewController.swift in Sources */,
+				09F75EF42AEEAA390026D2A8 /* UIStoryboard+Ext.swift in Sources */,
 				09859EE02AEE4C3C00A71825 /* AppDelegate.swift in Sources */,
+				09F75EFE2AEEAC080026D2A8 /* EmptyTVCell.swift in Sources */,
+				09BBCF8A2AEE517700B8E0C2 /* UIView+Ext.swift in Sources */,
 				09859EE22AEE4C3C00A71825 /* SceneDelegate.swift in Sources */,
+				09F75EF02AEEA8CE0026D2A8 /* HomeViewController.swift in Sources */,
+				09BBCF942AEE6C0B00B8E0C2 /* UIColor+Ext.swift in Sources */,
+				09F75EF92AEEAAF70026D2A8 /* NSObject+Ext.swift in Sources */,
 				09859EEA2AEE4C3C00A71825 /* Resource_Profile_Builder.xcdatamodeld in Sources */,
+				09F75F012AEEDFF20026D2A8 /* UITableView+Ext.swift in Sources */,
+				09F75EF72AEEAA6C0026D2A8 /* Enums.swift in Sources */,
+				09BBCF902AEE663D00B8E0C2 /* UITextField+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -279,7 +487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -291,12 +499,14 @@
 		};
 		09859EF42AEE4C3D00A71825 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3949B4A2F2BA8342EC1898AF /* Pods-Resource Profile Builder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WQZ3XLJ7TJ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Resource Profile Builder/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -304,6 +514,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,12 +530,14 @@
 		};
 		09859EF52AEE4C3D00A71825 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30D7C5BDC1C07E289AF481DA /* Pods-Resource Profile Builder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WQZ3XLJ7TJ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Resource Profile Builder/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -332,6 +545,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
