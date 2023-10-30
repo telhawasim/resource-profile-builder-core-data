@@ -31,6 +31,11 @@
 		09F75EFE2AEEAC080026D2A8 /* EmptyTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F75EFC2AEEAC080026D2A8 /* EmptyTVCell.swift */; };
 		09F75EFF2AEEAC080026D2A8 /* EmptyTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F75EFD2AEEAC080026D2A8 /* EmptyTVCell.xib */; };
 		09F75F012AEEDFF20026D2A8 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F75F002AEEDFF20026D2A8 /* UITableView+Ext.swift */; };
+		09F75F042AEF93110026D2A8 /* AddEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F75F032AEF93110026D2A8 /* AddEmployeeViewController.swift */; };
+		09F75F062AEF94DF0026D2A8 /* CameraHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F75F052AEF94DF0026D2A8 /* CameraHandler.swift */; };
+		09F75F092AEF98E00026D2A8 /* Designation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F75F082AEF98E00026D2A8 /* Designation.swift */; };
+		09F75F0B2AEFA13D0026D2A8 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F75F0A2AEFA13D0026D2A8 /* Date+Ext.swift */; };
+		09F75F0E2AEFA1680026D2A8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F75F0D2AEFA1680026D2A8 /* Constants.swift */; };
 		29C2D52B0C8195AA9C803BD0 /* Pods_Resource_Profile_Builder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18D7193F5CD9E6D781E7788 /* Pods_Resource_Profile_Builder.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +66,11 @@
 		09F75EFC2AEEAC080026D2A8 /* EmptyTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTVCell.swift; sourceTree = "<group>"; };
 		09F75EFD2AEEAC080026D2A8 /* EmptyTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyTVCell.xib; sourceTree = "<group>"; };
 		09F75F002AEEDFF20026D2A8 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		09F75F032AEF93110026D2A8 /* AddEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewController.swift; sourceTree = "<group>"; };
+		09F75F052AEF94DF0026D2A8 /* CameraHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHandler.swift; sourceTree = "<group>"; };
+		09F75F082AEF98E00026D2A8 /* Designation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Designation.swift; sourceTree = "<group>"; };
+		09F75F0A2AEFA13D0026D2A8 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		09F75F0D2AEFA1680026D2A8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		30D7C5BDC1C07E289AF481DA /* Pods-Resource Profile Builder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resource Profile Builder.release.xcconfig"; path = "Target Support Files/Pods-Resource Profile Builder/Pods-Resource Profile Builder.release.xcconfig"; sourceTree = "<group>"; };
 		3949B4A2F2BA8342EC1898AF /* Pods-Resource Profile Builder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Resource Profile Builder.debug.xcconfig"; path = "Target Support Files/Pods-Resource Profile Builder/Pods-Resource Profile Builder.debug.xcconfig"; sourceTree = "<group>"; };
 		E18D7193F5CD9E6D781E7788 /* Pods_Resource_Profile_Builder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Resource_Profile_Builder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +125,8 @@
 		09BBCF792AEE4EB000B8E0C2 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				09F75F0C2AEFA15A0026D2A8 /* Constants */,
+				09F75F072AEF98D10026D2A8 /* Model */,
 				09F75EFA2AEEABD70026D2A8 /* TableView Cell */,
 				09F75EF52AEEAA610026D2A8 /* Enums */,
 				09BBCF8B2AEE650E00B8E0C2 /* Helper Classes */,
@@ -129,6 +141,7 @@
 			children = (
 				09859EE32AEE4C3C00A71825 /* LoginViewController.swift */,
 				09F75EEF2AEEA8CE0026D2A8 /* HomeViewController.swift */,
+				09F75F032AEF93110026D2A8 /* AddEmployeeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -162,6 +175,7 @@
 				09F75EF32AEEAA390026D2A8 /* UIStoryboard+Ext.swift */,
 				09F75EF82AEEAAF70026D2A8 /* NSObject+Ext.swift */,
 				09F75F002AEEDFF20026D2A8 /* UITableView+Ext.swift */,
+				09F75F0A2AEFA13D0026D2A8 /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -171,6 +185,7 @@
 			children = (
 				09BBCF8D2AEE652300B8E0C2 /* Utilities.swift */,
 				09F75EF12AEEA8F20026D2A8 /* Routing.swift */,
+				09F75F052AEF94DF0026D2A8 /* CameraHandler.swift */,
 			);
 			path = "Helper Classes";
 			sourceTree = "<group>";
@@ -198,6 +213,22 @@
 				09F75EFD2AEEAC080026D2A8 /* EmptyTVCell.xib */,
 			);
 			path = EmptyTVCell;
+			sourceTree = "<group>";
+		};
+		09F75F072AEF98D10026D2A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09F75F082AEF98E00026D2A8 /* Designation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09F75F0C2AEFA15A0026D2A8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				09F75F0D2AEFA1680026D2A8 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		A3CFC7148C355DF26F5F090D /* Frameworks */ = {
@@ -340,16 +371,21 @@
 			files = (
 				09F75EF22AEEA8F20026D2A8 /* Routing.swift in Sources */,
 				09BBCF8E2AEE652300B8E0C2 /* Utilities.swift in Sources */,
+				09F75F042AEF93110026D2A8 /* AddEmployeeViewController.swift in Sources */,
 				09859EE42AEE4C3C00A71825 /* LoginViewController.swift in Sources */,
 				09F75EF42AEEAA390026D2A8 /* UIStoryboard+Ext.swift in Sources */,
+				09F75F092AEF98E00026D2A8 /* Designation.swift in Sources */,
 				09859EE02AEE4C3C00A71825 /* AppDelegate.swift in Sources */,
 				09F75EFE2AEEAC080026D2A8 /* EmptyTVCell.swift in Sources */,
 				09BBCF8A2AEE517700B8E0C2 /* UIView+Ext.swift in Sources */,
+				09F75F0B2AEFA13D0026D2A8 /* Date+Ext.swift in Sources */,
 				09859EE22AEE4C3C00A71825 /* SceneDelegate.swift in Sources */,
 				09F75EF02AEEA8CE0026D2A8 /* HomeViewController.swift in Sources */,
 				09BBCF942AEE6C0B00B8E0C2 /* UIColor+Ext.swift in Sources */,
 				09F75EF92AEEAAF70026D2A8 /* NSObject+Ext.swift in Sources */,
 				09859EEA2AEE4C3C00A71825 /* Resource_Profile_Builder.xcdatamodeld in Sources */,
+				09F75F0E2AEFA1680026D2A8 /* Constants.swift in Sources */,
+				09F75F062AEF94DF0026D2A8 /* CameraHandler.swift in Sources */,
 				09F75F012AEEDFF20026D2A8 /* UITableView+Ext.swift in Sources */,
 				09F75EF72AEEAA6C0026D2A8 /* Enums.swift in Sources */,
 				09BBCF902AEE663D00B8E0C2 /* UITextField+Ext.swift in Sources */,

@@ -8,5 +8,6 @@ target 'Resource Profile Builder' do
   # Pods for Resource Profile Builder
   
   pod 'IQKeyboardManager'
+  pod "FlagPhoneNumber"
 
 end

@@ -29,5 +29,9 @@
 		<string>Gilroy-Heavy.ttf</string>
 		<string>Gilroy-SemiBold.ttf</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Using Camera for uploading images </string>
+	<key>NSCameraUsageDescription</key>
+	<string>Using Camera for uploading images </string>
 </dict>
 </plist>

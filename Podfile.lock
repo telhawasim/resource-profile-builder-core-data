@@ -1,16 +1,22 @@
 PODS:
+  - FlagPhoneNumber (0.8.0):
+    - FlagPhoneNumber/libPhoneNumberiOS (= 0.8.0)
+  - FlagPhoneNumber/libPhoneNumberiOS (0.8.0)
   - IQKeyboardManager (6.5.16)
 
 DEPENDENCIES:
+  - FlagPhoneNumber
   - IQKeyboardManager
 
 SPEC REPOS:
   trunk:
+    - FlagPhoneNumber
     - IQKeyboardManager
 
 SPEC CHECKSUMS:
+  FlagPhoneNumber: 3712455b95f66cb0f2016fef7d9e34cddf8c7f9a
   IQKeyboardManager: 024b54d7dcb765c5bc99882cb4d5ea24a8cb7c3c
 
-PODFILE CHECKSUM: 34511d7d507229abc1cc44ccda3811129f252404
+PODFILE CHECKSUM: 5e3d2b86153c54ed25a91af1e795bda21daa845d
 
 COCOAPODS: 1.13.0

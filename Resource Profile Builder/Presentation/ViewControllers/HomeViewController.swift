@@ -37,9 +37,14 @@ class HomeViewController: UIViewController {
         self.openDrawer()
     }
     
-    //MARK: - BTN CLOSE DRAWER PRESSED -
+    //MARK: - BUTTON CLOSE DRAWER PRESSED -
     @IBAction func btnCloseDrawerPressed(_ sender: Any) {
         self.closeDrawer()
+    }
+    
+    //MARK: - BUTTON ADD EMPLOYEE PRESSED -
+    @IBAction func btnAddEmployeePressed(_ sender: Any) {
+        Routing.shared.navigateToAddEmployee(navigationController: self.navigationController)
     }
 }
 
