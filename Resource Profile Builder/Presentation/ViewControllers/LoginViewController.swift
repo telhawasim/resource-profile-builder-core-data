@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import RealmSwift
 
 class LoginViewController: UIViewController {
 
@@ -101,6 +102,12 @@ extension LoginViewController {
         return true
     }
     
+    //MARK: - SAVE DATA IN USER DEFAULTS -
+    func saveInUserDefaults() {
+        UserSettings.shared.userEmail = self.txtEmail.text
+        UserSettings.shared.userPassword = self.txtPassword.text
+    }
+    
     //MARK: - DISABLE BUTTONS -
     @objc func disableButton() {
         let emailIsEmpty = txtEmail.text?.isEmpty ?? true
@@ -116,43 +123,31 @@ extension LoginViewController {
     }
 }
 
-//MARK: - COREDATA IMPLEMENTATION -
+//MARK: - REALMS IMPLEMENTATION -
 extension LoginViewController {
     
     //MARK: - FETCH ADMIN DATA -
     func fetchAdmin() {
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let realm = try! Realm()
+        let admin = realm.objects(Admin.self)
         
-        do {
-            let fetchRequest: NSFetchRequest<Admin> = Admin.fetchRequest()
-            let tasks = try context.fetch(fetchRequest)
-            
-            if tasks.count == 0 {
-                self.setAdmin()
-            } else {
-                if self.adminExist(data: tasks[0]) {
-                    Routing.shared.navigateToHomeScreen(navigationController: self.navigationController)
-                }
+        if admin.count == 0 {
+            self.setAdmin()
+        } else {
+            if self.adminExist(data: admin[0]) {
+                self.saveInUserDefaults()
+                Routing.shared.navigateToHomeScreen(navigationController: self.navigationController)
             }
-        } catch {
-            print("Failed to fetch data: \(error)")
         }
     }
     
     //MARK: - SET ADMIN DATA -
     func setAdmin() {
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        
-        let admin = Admin(context: context)
-        admin.email = "telhawasim@gmail.com"
-        admin.password = "12344321"
-        
-        do {
-            try context.save()
+        let realm = try! Realm()
+        let admin = Admin(name: "Telha", email: "telhawasim@gmail.com", password: "12344321")
+        try! realm.write{
+            realm.add(admin)
             self.fetchAdmin()
-            print("Data saved successfully")
-        } catch {
-            print("Failed to save data: \(error)")
         }
     }
 }

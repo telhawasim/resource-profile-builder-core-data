@@ -9,5 +9,6 @@ target 'Resource Profile Builder' do
   
   pod 'IQKeyboardManager'
   pod "FlagPhoneNumber"
+  pod 'RealmSwift', '~>10'
 
 end

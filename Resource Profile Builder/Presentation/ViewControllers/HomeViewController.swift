@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class HomeViewController: UIViewController {
     
@@ -23,13 +24,22 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var drawerView: UIView!
     
     //MARK: - VARIABLES -
-    var model: [Employees] = []
+    var employees: [Employee] = [] {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
     
     //MARK: - LIFECYCLE -
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureTableView()
         self.leftGesture()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.getEmployees()
     }
     
     //MARK: - BUTTON DRAWER PRESSED -
@@ -56,6 +66,7 @@ extension HomeViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(EmptyTVCell.className)
+        self.tableView.register(EmployeeTVCell.className)
     }
     
     //MARK: - LEFT GESTURE -
@@ -97,17 +108,36 @@ extension HomeViewController {
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return model.count == 0 ? 1 : model.count
+        return employees.count == 0 ? 1 : employees.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if model.count == 0 {
+        if employees.count == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: EmptyTVCell.className, for: indexPath) as! EmptyTVCell
             cell.setup(type: .employeeListing)
             return cell
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: EmptyTVCell.className, for: indexPath) as! EmptyTVCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: EmployeeTVCell.className, for: indexPath) as! EmployeeTVCell
+            cell.configure(data: employees[indexPath.row])
             return cell
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        Routing.shared.navigateToProfile(navigationController: self.navigationController, employee: employees[indexPath.row])
+    }
+}
+
+//MARK: - REALMS IMPLEMENTATION -
+extension HomeViewController {
+    
+    //MARK: - GET TOTAL NUMBER OF EMPLOYEES -
+    func getEmployees() {
+        let realm = try! Realm()
+        let employees = realm.objects(Employee.self)
+        let first10Employees = Array(employees.prefix(10))
+        
+        self.lblTotalEmployees.text = "\(employees.count)"
+        self.employees = Array(employees)
     }
 }

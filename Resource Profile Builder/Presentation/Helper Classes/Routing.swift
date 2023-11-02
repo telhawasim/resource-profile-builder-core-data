@@ -19,6 +19,11 @@ class Routing {
         navigationController?.popViewController(animated: true)
     }
     
+    //MARK: - DISMISS VIEW CONTROLLER -
+    func dismiss(viewController: UIViewController?) {
+        viewController?.dismiss(animated: true)
+    }
+    
     //MARK: - NAVIGATE TO HOME SCREEN -
     func navigateToHomeScreen(navigationController: UINavigationController?) {
         let vc = UIStoryboard.getVC(from: .main, HomeViewController.className)
@@ -29,5 +34,22 @@ class Routing {
     func navigateToAddEmployee(navigationController: UINavigationController?) {
         let vc = UIStoryboard.getVC(from: .main, AddEmployeeViewController.className)
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    //MARK: - NAVIGATE TO PROFILE -
+    func navigateToProfile(navigationController: UINavigationController?, employee: Employee?) {
+        let vc = UIStoryboard.getVC(from: .main, ProfileViewController.className) as! ProfileViewController
+        vc.employee = employee
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    //MARK: - NAVIGATE TO DELETE EMPLOYEE POPUP -
+    func navigateToDeletePopUp(viewController: UIViewController) {
+        let vc = UIStoryboard.getVC(from: .main, DeleteProfileViewController.className) as! DeleteProfileViewController
+        vc.delegate = (viewController as! any DeleteProfileProtocol)
+        vc.modalPresentationStyle = .overCurrentContext
+        vc.modalTransitionStyle = .crossDissolve
+        
+        viewController.present(vc, animated: true)
     }
 }

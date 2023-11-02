@@ -7,32 +7,14 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 
-struct DesignationModel {
-    var name: String?
+class Designation: Object {
+    @Persisted(primaryKey: true) var _id: ObjectId
+    @Persisted var designation: String
     
-    static func getDesignation() -> [DesignationModel] {
-        let model = [
-                DesignationModel(name: "Intern"),
-                DesignationModel(name: "Associate Software Engineer"),
-                DesignationModel(name: "Software Engineer"),
-                DesignationModel(name: "Senior Software Engineer"),
-                DesignationModel(name: "Team Lead"),
-                DesignationModel(name: "Principal Software Engineer")
-        ]
-        
-        return model
-    }
-    
-    static func getDepartment() -> [DesignationModel] {
-        let model = [
-            DesignationModel(name: "Engineering"),
-            DesignationModel(name: "Finance"),
-            DesignationModel(name: "HR"),
-            DesignationModel(name: "Corporate"),
-            DesignationModel(name: "Managing")
-        ]
-        
-        return model
+    convenience init(designation: String) {
+        self.init()
+        self.designation = designation
     }
 }

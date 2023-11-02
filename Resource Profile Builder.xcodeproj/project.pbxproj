@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09773AF42AF24B89004303BB /* Admin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09773AF32AF24B89004303BB /* Admin.swift */; };
+		09773AF62AF25584004303BB /* Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09773AF52AF25584004303BB /* Department.swift */; };
+		09773AF82AF2582D004303BB /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09773AF72AF2582D004303BB /* Employee.swift */; };
+		09773AFC2AF271F1004303BB /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09773AFB2AF271F1004303BB /* UIImage+Ext.swift */; };
+		09773AFE2AF27428004303BB /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09773AFD2AF27428004303BB /* String+Ext.swift */; };
+		09773B022AF2751C004303BB /* EmployeeTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09773B002AF2751C004303BB /* EmployeeTVCell.swift */; };
+		09773B032AF2751C004303BB /* EmployeeTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09773B012AF2751C004303BB /* EmployeeTVCell.xib */; };
+		09773B052AF2DD33004303BB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09773B042AF2DD33004303BB /* ProfileViewController.swift */; };
+		0982C30D2AF2EAD900B6BE92 /* DeleteProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0982C30C2AF2EAD900B6BE92 /* DeleteProfileViewController.swift */; };
+		0982C30F2AF2F2D400B6BE92 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0982C30E2AF2F2D400B6BE92 /* UserSettings.swift */; };
 		09859EE02AEE4C3C00A71825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09859EDF2AEE4C3C00A71825 /* AppDelegate.swift */; };
 		09859EE22AEE4C3C00A71825 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09859EE12AEE4C3C00A71825 /* SceneDelegate.swift */; };
 		09859EE42AEE4C3C00A71825 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09859EE32AEE4C3C00A71825 /* LoginViewController.swift */; };
@@ -40,6 +50,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09773AF32AF24B89004303BB /* Admin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Admin.swift; sourceTree = "<group>"; };
+		09773AF52AF25584004303BB /* Department.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Department.swift; sourceTree = "<group>"; };
+		09773AF72AF2582D004303BB /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		09773AFB2AF271F1004303BB /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		09773AFD2AF27428004303BB /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		09773B002AF2751C004303BB /* EmployeeTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTVCell.swift; sourceTree = "<group>"; };
+		09773B012AF2751C004303BB /* EmployeeTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeTVCell.xib; sourceTree = "<group>"; };
+		09773B042AF2DD33004303BB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0982C30C2AF2EAD900B6BE92 /* DeleteProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteProfileViewController.swift; sourceTree = "<group>"; };
+		0982C30E2AF2F2D400B6BE92 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		09859EDC2AEE4C3C00A71825 /* Resource Profile Builder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resource Profile Builder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09859EDF2AEE4C3C00A71825 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09859EE12AEE4C3C00A71825 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09773AFF2AF27500004303BB /* EmployeeTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				09773B002AF2751C004303BB /* EmployeeTVCell.swift */,
+				09773B012AF2751C004303BB /* EmployeeTVCell.xib */,
+			);
+			path = EmployeeTVCell;
+			sourceTree = "<group>";
+		};
 		09859ED32AEE4C3C00A71825 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +171,8 @@
 				09859EE32AEE4C3C00A71825 /* LoginViewController.swift */,
 				09F75EEF2AEEA8CE0026D2A8 /* HomeViewController.swift */,
 				09F75F032AEF93110026D2A8 /* AddEmployeeViewController.swift */,
+				09773B042AF2DD33004303BB /* ProfileViewController.swift */,
+				0982C30C2AF2EAD900B6BE92 /* DeleteProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -176,6 +207,8 @@
 				09F75EF82AEEAAF70026D2A8 /* NSObject+Ext.swift */,
 				09F75F002AEEDFF20026D2A8 /* UITableView+Ext.swift */,
 				09F75F0A2AEFA13D0026D2A8 /* Date+Ext.swift */,
+				09773AFB2AF271F1004303BB /* UIImage+Ext.swift */,
+				09773AFD2AF27428004303BB /* String+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -186,6 +219,7 @@
 				09BBCF8D2AEE652300B8E0C2 /* Utilities.swift */,
 				09F75EF12AEEA8F20026D2A8 /* Routing.swift */,
 				09F75F052AEF94DF0026D2A8 /* CameraHandler.swift */,
+				0982C30E2AF2F2D400B6BE92 /* UserSettings.swift */,
 			);
 			path = "Helper Classes";
 			sourceTree = "<group>";
@@ -201,6 +235,7 @@
 		09F75EFA2AEEABD70026D2A8 /* TableView Cell */ = {
 			isa = PBXGroup;
 			children = (
+				09773AFF2AF27500004303BB /* EmployeeTVCell */,
 				09F75EFB2AEEABF10026D2A8 /* EmptyTVCell */,
 			);
 			path = "TableView Cell";
@@ -219,6 +254,9 @@
 			isa = PBXGroup;
 			children = (
 				09F75F082AEF98E00026D2A8 /* Designation.swift */,
+				09773AF32AF24B89004303BB /* Admin.swift */,
+				09773AF52AF25584004303BB /* Department.swift */,
+				09773AF72AF2582D004303BB /* Employee.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,6 +351,7 @@
 				09BBCF822AEE4F6C00B8E0C2 /* Gilroy-Medium.ttf in Resources */,
 				09F75EFF2AEEAC080026D2A8 /* EmptyTVCell.xib in Resources */,
 				09BBCF862AEE4F6C00B8E0C2 /* Gilroy-Regular.ttf in Resources */,
+				09773B032AF2751C004303BB /* EmployeeTVCell.xib in Resources */,
 				09BBCF832AEE4F6C00B8E0C2 /* Gilroy-Bold.ttf in Resources */,
 				09BBCF852AEE4F6C00B8E0C2 /* Gilroy-SemiBold.ttf in Resources */,
 				09859EEC2AEE4C3D00A71825 /* Assets.xcassets in Resources */,
@@ -375,16 +414,25 @@
 				09859EE42AEE4C3C00A71825 /* LoginViewController.swift in Sources */,
 				09F75EF42AEEAA390026D2A8 /* UIStoryboard+Ext.swift in Sources */,
 				09F75F092AEF98E00026D2A8 /* Designation.swift in Sources */,
+				09773B052AF2DD33004303BB /* ProfileViewController.swift in Sources */,
 				09859EE02AEE4C3C00A71825 /* AppDelegate.swift in Sources */,
 				09F75EFE2AEEAC080026D2A8 /* EmptyTVCell.swift in Sources */,
 				09BBCF8A2AEE517700B8E0C2 /* UIView+Ext.swift in Sources */,
+				0982C30F2AF2F2D400B6BE92 /* UserSettings.swift in Sources */,
+				09773B022AF2751C004303BB /* EmployeeTVCell.swift in Sources */,
+				09773AFC2AF271F1004303BB /* UIImage+Ext.swift in Sources */,
 				09F75F0B2AEFA13D0026D2A8 /* Date+Ext.swift in Sources */,
+				09773AF42AF24B89004303BB /* Admin.swift in Sources */,
 				09859EE22AEE4C3C00A71825 /* SceneDelegate.swift in Sources */,
 				09F75EF02AEEA8CE0026D2A8 /* HomeViewController.swift in Sources */,
 				09BBCF942AEE6C0B00B8E0C2 /* UIColor+Ext.swift in Sources */,
 				09F75EF92AEEAAF70026D2A8 /* NSObject+Ext.swift in Sources */,
+				09773AF82AF2582D004303BB /* Employee.swift in Sources */,
 				09859EEA2AEE4C3C00A71825 /* Resource_Profile_Builder.xcdatamodeld in Sources */,
+				09773AFE2AF27428004303BB /* String+Ext.swift in Sources */,
+				0982C30D2AF2EAD900B6BE92 /* DeleteProfileViewController.swift in Sources */,
 				09F75F0E2AEFA1680026D2A8 /* Constants.swift in Sources */,
+				09773AF62AF25584004303BB /* Department.swift in Sources */,
 				09F75F062AEF94DF0026D2A8 /* CameraHandler.swift in Sources */,
 				09F75F012AEEDFF20026D2A8 /* UITableView+Ext.swift in Sources */,
 				09F75EF72AEEAA6C0026D2A8 /* Enums.swift in Sources */,

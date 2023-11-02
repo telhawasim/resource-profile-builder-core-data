@@ -3,20 +3,30 @@ PODS:
     - FlagPhoneNumber/libPhoneNumberiOS (= 0.8.0)
   - FlagPhoneNumber/libPhoneNumberiOS (0.8.0)
   - IQKeyboardManager (6.5.16)
+  - Realm (10.44.0):
+    - Realm/Headers (= 10.44.0)
+  - Realm/Headers (10.44.0)
+  - RealmSwift (10.44.0):
+    - Realm (= 10.44.0)
 
 DEPENDENCIES:
   - FlagPhoneNumber
   - IQKeyboardManager
+  - RealmSwift (~> 10)
 
 SPEC REPOS:
   trunk:
     - FlagPhoneNumber
     - IQKeyboardManager
+    - Realm
+    - RealmSwift
 
 SPEC CHECKSUMS:
   FlagPhoneNumber: 3712455b95f66cb0f2016fef7d9e34cddf8c7f9a
   IQKeyboardManager: 024b54d7dcb765c5bc99882cb4d5ea24a8cb7c3c
+  Realm: 0419a32457873acb720df25bf1d658df36967cf2
+  RealmSwift: 352f85c018b4d0efe961974bfa95bf7a30e079f6
 
-PODFILE CHECKSUM: 5e3d2b86153c54ed25a91af1e795bda21daa845d
+PODFILE CHECKSUM: a42936be13e20dd6098bf1521df3f4addb0deaf0
 
 COCOAPODS: 1.13.0
